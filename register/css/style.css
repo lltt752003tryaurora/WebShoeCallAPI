@@ -1,0 +1,215 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+header {
+  background-color: black;
+}
+header .header_top {
+  padding: 15px 0;
+  display: flex;
+  justify-content: space-between;
+}
+header .header_top .header_left a {
+  text-decoration: none;
+}
+header .header_top .header_right ul {
+  padding-bottom: 0;
+  list-style: none;
+}
+header .header_top .header_right ul li {
+  position: relative;
+  padding: 10px 0;
+  margin-left: 15px;
+  display: inline;
+}
+header .header_top .header_right ul li::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #c7b559;
+  transition: all 0.5s;
+}
+header .header_top .header_right ul li:hover::before {
+  width: 100%;
+}
+header .header_top .header_right ul li a {
+  transition: all 0.5s;
+  color: #ffffff;
+  text-decoration: none;
+}
+header .header_top .header_right ul li a:hover {
+  color: #c7b559;
+}
+
+nav {
+  padding-top: 10px;
+}
+nav ul {
+  padding-left: 0;
+  list-style: none;
+}
+nav ul li {
+  position: relative;
+  margin-right: 15px;
+  display: inline;
+}
+nav ul li::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #c7b559;
+  transition: all 0.5s;
+}
+nav ul li:hover::before {
+  width: 100%;
+}
+nav ul li a {
+  transition: all 0.5s;
+  color: black;
+  text-decoration: none;
+  font-weight: 300;
+}
+nav ul li a.active {
+  font-weight: bold;
+}
+nav ul li a:hover {
+  color: #c7b559;
+}
+
+main h1 {
+  font-size: 40px;
+  font-weight: 400;
+  text-align: center;
+}
+main .container span {
+  padding-top: 3px;
+}
+main .container .col-6 input {
+  font-size: 20px;
+  font-weight: 400;
+  border: none;
+  border-bottom: 3px solid #ae18e2;
+}
+main .container .col-6 input:focus {
+  box-shadow: none;
+}
+main .container .col-6 label {
+  padding-top: 3px;
+}
+main .container .col-6:last-child {
+  margin-top: 30px;
+}
+main .container .col-6:last-child input {
+  border-bottom: none;
+  border: 1px solid black;
+}
+main .row:last-child .col-6:last-child button {
+  position: relative;
+  overflow: hidden;
+  height: 3rem;
+  padding: 0 2rem;
+  border-radius: 1.5rem;
+  background: #3d3a4e;
+  background-size: 400%;
+  color: #fff;
+  border: none;
+}
+main .row:last-child .col-6:last-child button span {
+  position: relative;
+  z-index: 9999;
+}
+main .row:last-child .col-6:last-child button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  width: 100%;
+  height: inherit;
+  border-radius: inherit;
+  background: linear-gradient(82.3deg, rgb(150, 93, 233) 10.8%, rgb(99, 88, 238) 94.3%);
+  transition: all 0.475s;
+}
+main .row:last-child .col-6:last-child button:hover::before {
+  transform: scaleX(1);
+}
+
+footer {
+  margin-top: 50px;
+}
+footer .container .footer_top ul {
+  list-style: none;
+  padding: 0;
+}
+footer .container .footer_top ul li a {
+  font-size: 14px;
+  transition: all 0.5s;
+  color: black;
+  text-decoration: none;
+}
+footer .container .footer_top ul li a:hover {
+  color: #c7b559;
+}
+footer .container .footer_top .col-4:nth-child(3) a {
+  transition: all 0.5s;
+  color: red;
+  text-decoration: none;
+}
+footer .container .footer_top .col-4:nth-child(3) a:hover {
+  text-decoration: underline;
+}
+footer .footer_bottom {
+  margin-bottom: 80px;
+  background-color: #ececec;
+}
+footer .footer_bottom .footer_bot {
+  padding-bottom: 20px;
+  margin-top: 70px;
+}
+footer .footer_bottom .footer_bot .col-4:first-child p {
+  margin-bottom: 40px;
+}
+footer .footer_bottom .footer_bot .col-4:first-child a {
+  transition: all 0.5s;
+  color: red;
+  text-decoration: none;
+}
+footer .footer_bottom .footer_bot .col-4:first-child a:hover {
+  text-decoration: underline;
+}
+footer .footer_bottom .footer_bot .col-4:nth-child(2) P {
+  margin-bottom: 64px;
+}
+footer .footer_bottom .footer_bot .col-4:nth-child(2) a {
+  transition: all 0.5s;
+  color: red;
+  text-decoration: none;
+}
+footer .footer_bottom .footer_bot .col-4:nth-child(2) a:hover {
+  text-decoration: underline;
+}
+footer .footer_bottom .footer_bot .col-4:nth-child(3) p {
+  margin-bottom: 40px;
+}
+footer .footer_bottom .footer_bot .col-4:nth-child(3) a {
+  transition: all 0.5s;
+  color: red;
+  text-decoration: none;
+}
+footer .footer_bottom .footer_bot .col-4:nth-child(3) a:hover {
+  text-decoration: underline;
+}/*# sourceMappingURL=style.css.map */

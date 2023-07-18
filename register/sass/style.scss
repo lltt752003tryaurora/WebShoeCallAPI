@@ -1,0 +1,16 @@
+// Parent selector : Cú pháp để dùng đó là ( &:: )
+//Mixin : cúp pháp tạo mixin : ( @Mixin ) , Lưu ý : phải tạo ra biến mixin này trước ở trên đầu
+
+@import "./variables";
+@import "./mixin"; 
+@import "./base/reset";
+@import "./layout/headers";
+@import "./layout/main";
+@import "./layout/footer";
+
+
+
+
+
+
+

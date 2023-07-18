@@ -1,0 +1,25 @@
+@mixin textStyle ($color, $fs, $fw) {
+    color: $color;
+    font-size: $fs;
+    font-weight: $fw;
+}
+
+@mixin contentSection ($position, $padding) {
+    display: flex;
+    justify-content: $position;
+    align-items: center;
+    padding: $padding;
+}
+
+@mixin featureSize ($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+@mixin StyleBoxSize {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px gray solid;
+    transition: all 0.5s;
+    text-align: center;
+}

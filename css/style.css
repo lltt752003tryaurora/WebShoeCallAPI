@@ -1,0 +1,204 @@
+* {
+  font-family: "Inter", sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.section {
+  padding: 40px 0;
+}
+
+header .header_top {
+  background-color: #000000;
+}
+header .header_top .header_top_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+header .header_top .header_top_content .logo {
+  width: 75px;
+}
+header .header_top .header_top_content nav ul {
+  list-style: none;
+  margin-bottom: 0;
+}
+header .header_top .header_top_content nav ul li {
+  display: inline-block;
+  margin-right: 15px;
+}
+header .header_top .header_top_content nav ul li a {
+  text-decoration: none;
+  color: #F6F6F6;
+  font-size: 16px;
+  font-weight: 300;
+}
+header .header_bottom #navbarNav .nav-item {
+  position: relative;
+  margin-right: 15px;
+}
+header .header_bottom #navbarNav .nav-item::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 3px;
+  background-color: #000000;
+  left: 0;
+  bottom: 0;
+  transition: all 0.3s;
+}
+header .header_bottom #navbarNav .nav-item .nav-link {
+  color: #000000;
+  font-size: 20px;
+  font-weight: 300;
+}
+header .header_bottom #navbarNav .nav-item .nav-link.active {
+  font-weight: 700;
+}
+header .header_bottom #navbarNav .nav-item.active::after {
+  width: 100%;
+}
+header .header_bottom #navbarNav .nav-item:hover::after {
+  width: 100%;
+}
+
+.banner {
+  background-image: url(./../img/football-fw23-crazyfast-launch-hp-mh-large-d_tcm212-1028950.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+}
+.banner .banner_title h1 {
+  color: #000000;
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.banner .banner_title a .btn-buyNow {
+  padding: 15px 25px;
+  color: #F6F6F6;
+  border: none;
+  background-color: #000000;
+  text-transform: uppercase;
+  border-radius: 8px;
+  font-weight: bolder;
+}
+.banner .banner_title a .btn-buyNow:hover {
+  transition: all 0.5s;
+  color: black;
+  background-color: grey;
+}
+
+.product .product_title h1 {
+  color: #000000;
+  font-size: 40px;
+  font-weight: 400;
+  text-align: center;
+  padding-bottom: 1.6rem;
+}
+.product .product_content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.product .product_content .product_item {
+  background-color: #F8F8F8;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.product .product_content .product_item img {
+  width: 100%;
+}
+.product .product_content .product_item .item_text {
+  padding: 0 1.6rem;
+}
+.product .product_content .product_item .item_text h3 {
+  color: #000000;
+  font-size: 20px;
+  font-weight: 600;
+}
+.product .product_content .product_item .item_text p {
+  color: #595959;
+  font-size: 16px;
+  font-weight: 400;
+}
+.product .product_content .product_item .item_buy {
+  background-color: #DEDDDC;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+}
+.product .product_content .product_item .item_buy span {
+  color: #000000;
+  font-size: 20px;
+  font-weight: 600;
+  margin-right: 30px;
+}
+.product .product_content .product_item .item_buy a .btn-buyNow {
+  font-weight: bold;
+  border-radius: 8px;
+  padding: 15px 60px;
+  color: #F6F6F6;
+  border: none;
+  background-color: #000000;
+}
+.product .product_content .product_item .item_buy a .btn-buyNow:hover {
+  transition: all 0.5s;
+  color: black;
+  background-color: grey;
+}
+
+footer {
+  background-color: #000000;
+}
+footer .footer_list .footer_list-header {
+  text-transform: uppercase;
+  color: #F6F6F6;
+  font-size: 16px;
+  font-weight: 700;
+}
+footer .footer_list ul li {
+  margin-top: 1.5rem;
+  list-style: none;
+}
+footer .footer_list ul li a {
+  text-decoration: none;
+  color: #595959;
+  font-size: 16px;
+  font-weight: 400;
+  transition: all 0.3s;
+}
+footer .footer_list ul li a:hover {
+  color: #F6F6F6;
+}
+footer .footer_list .footer_icon {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+footer .footer_list .footer_icon i {
+  font-size: 20px;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: #595959;
+  text-align: center;
+  line-height: 2.5rem;
+  border-radius: 50%;
+  color: #000000;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+footer .footer_list .footer_icon i:hover {
+  background-color: #F6F6F6;
+}/*# sourceMappingURL=style.css.map */

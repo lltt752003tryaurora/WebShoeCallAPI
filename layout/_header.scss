@@ -1,0 +1,121 @@
+header {
+    .header_top {
+        background-color: $color-black-0;
+        .header_top_content {
+            @include contentSection(space-between, 20px 0);
+            .logo {
+                width: 75px;
+            }
+
+            nav {
+                ul {
+                    list-style: none;
+                    margin-bottom: 0;
+                    li {
+                        display: inline-block;
+                        margin-right: 15px;
+                        
+                        a {
+                            text-decoration: none;
+                            @include textStyle ($color-white-0, $fs-0, $fw-1);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    
+
+    // .header_bottom {
+    //     .header_bottom_content {
+    //         @include contentSection(flex-start, 20px 0);
+    //         nav {
+    //             ul {
+    //                 list-style: none;
+    //                 margin-bottom: 0;
+    //                 padding-left: 0;
+    //                 li {
+    //                     display: inline-block;
+    //                     margin-right: 15px;
+    //                     position: relative;
+
+    //                     a {
+    //                         text-decoration: none;
+    //                         @include textStyle ($color-black-0, $fs-1, $fw-1);
+    //                     }
+
+    //                     &::after {
+    //                         content: "";
+    //                         position: absolute;
+    //                         width: 0%;
+    //                         height: 3px;
+    //                         background-color: $color-black-0;
+    //                         left: 0;
+    //                         bottom: 0;
+    //                         transition: all 0.3s;
+    //                     }
+
+    //                     &.active {
+    //                         a {
+    //                             font-weight: $fw-4;
+    //                         }
+                            
+
+    //                         &::after {
+    //                             width: 100%;
+    //                         }
+    //                     }
+
+    //                     &:hover::after {
+    //                         width: 100%;
+    //                     }
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
+    .header_bottom {
+        #navbarNav {
+            .nav-item {
+                position: relative;
+                margin-right: 15px;
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    width: 0%;
+                    height: 3px;
+                    background-color: $color-black-0;
+                    left: 0;
+                    bottom: 0;
+                    transition: all 0.3s;
+                }
+
+                
+
+                .nav-link {
+                    @include textStyle ($color-black-0, $fs-1, $fw-1);
+
+                    &.active {
+                        font-weight: $fw-4;
+                    }
+
+                }
+
+                &.active {
+                    &::after {
+                        width: 100%;
+                    }
+                }
+
+                &:hover {
+                    &::after {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+

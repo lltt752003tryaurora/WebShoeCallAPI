@@ -1,0 +1,119 @@
+footer {
+    margin-top:50px;
+    .container{
+        .footer_top{
+            h3{
+    
+            }
+            ul{
+                list-style: none;
+                padding:0;
+                li{
+                    a{
+                        font-size: $fs-5;
+                        transition: all 0.5s;
+                        color:black;
+                        text-decoration: none;
+                        &:hover{
+                            color: #c7b559;
+                        }
+                    }
+                }
+            }
+            .col-4:nth-child(3){
+                p{
+
+                }
+                a{
+                    transition: all 0.5s;
+                    color:red;
+                    text-decoration: none;
+                    &:hover{
+                        text-decoration: underline;
+                        // font-size: $fs-2;
+                        // font-weight: $fw-regular;
+                    }
+                }
+            }
+    
+        }
+
+    }
+    .footer_bottom{
+        // padding-top:5px;
+        margin-bottom:80px;
+        background-color: #ececec;
+        .footer_bot{
+            padding-bottom: 20px;
+            
+            margin-top: 70px;
+            .col-4:first-child {
+                p{
+                    margin-bottom: 40px;
+                }
+                a{
+                    transition: all 0.5s;
+                    color:red;
+                    text-decoration: none;
+                    &:hover{
+                        text-decoration: underline;
+                        // font-size: $fs-2;
+                        // font-weight: $fw-regular;
+                    }
+                }
+    
+            }
+            .col-4:nth-child(2){
+                P{
+                    margin-bottom: 64px;
+                }
+                a{
+                    transition: all 0.5s;
+                    color:red;
+                    text-decoration: none;
+                    &:hover{
+                        text-decoration: underline;
+                        // font-size: $fs-2;
+                        // font-weight: $fw-regular;
+                    }
+                }
+            }
+            .col-4:nth-child(3){
+                p{
+                    margin-bottom: 40px;
+    
+                }
+                a{
+                    transition: all 0.5s;
+                    color:red;
+                    text-decoration: none;
+                    &:hover{
+                        text-decoration: underline;
+                        // font-size: $fs-2;
+                        // font-weight: $fw-regular;
+                    }
+    
+                }
+            }
+            // h3{
+    
+            // }
+            // p{
+            //     // margin: 0;
+            //     font-size: $fs-5;
+    
+            // }
+            // a{
+                
+            //     color:red;
+            //     text-decoration: none;
+            // }
+    
+    
+        }
+
+    }
+    
+    
+    
+}

@@ -1,0 +1,89 @@
+header {
+    //cái bg bị lỗi biến ko ăn
+    background-color: black;
+    .header_top {
+      padding: 15px 0;
+      display: flex;
+      justify-content: space-between;
+      .header_left {
+        a {
+          text-decoration: none;
+        }
+      }
+      .header_right {
+        ul {
+          padding-bottom: 0;
+          list-style: none;
+          li {
+            position: relative;
+            padding: 10px 0;
+  
+            margin-left: 15px;
+            display: inline;
+            &::before {
+              content: "";
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              width: 0;
+              height: 2px;
+              background-color: #c7b559;
+              transition: all 0.5s;
+            }
+            &:hover::before {
+              width: 100%;
+            }
+  
+            a {
+              transition: all 0.5s;
+              color: $color-white-1;
+              text-decoration: none;
+              &:hover {
+                color: #c7b559;
+              }
+
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  nav {
+    padding-top: 10px;
+    ul {
+      padding-left: 0;
+      list-style: none;
+      li {
+        position: relative;
+        margin-right: 15px;
+        display: inline;
+        &::before {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left:0;
+          width:0;
+          height:2px;
+          background-color: #c7b559;
+          transition: all 0.5s;
+        }
+        &:hover::before{
+          width: 100%;
+        }
+  
+        a {
+          transition: all 0.5s;
+          color: black;
+          text-decoration: none;
+          font-weight: $fw-thin;
+          &.active {
+            font-weight: $fw-bold;
+          }
+          &:hover{
+            color: #c7b559;
+          }
+        }
+      }
+    }
+  }

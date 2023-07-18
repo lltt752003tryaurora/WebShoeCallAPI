@@ -1,0 +1,6 @@
+@mixin styleButton ($padding, $color, $background-color) {
+    padding: $padding;
+    color: $color;
+    border: none;
+    background-color: $background-color;
+}

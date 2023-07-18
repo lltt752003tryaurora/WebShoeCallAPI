@@ -1,0 +1,8 @@
+@mixin styleText($font-size) {
+    font-size: $font-size;
+  }
+  
+  @mixin stylehard($font-weight) {
+    text-decoration: none;
+    font-weight: bold;
+  }

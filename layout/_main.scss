@@ -1,0 +1,83 @@
+.banner {
+  background-image: url(./../img/football-fw23-crazyfast-launch-hp-mh-large-d_tcm212-1028950.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+  @include contentSection(space-between, 0);
+
+  .banner_title {
+    h1 {
+      @include textStyle($color-black-0, $fs-3, $fw-4);
+      text-transform: uppercase;
+    }
+
+    a {
+      .btn-buyNow {
+        @include styleButton(15px 25px, $color-white-0, $color-black-0);
+        text-transform: uppercase;
+        border-radius: 8px;
+        font-weight: bolder;
+        &:hover {
+          transition: all 0.5s;
+          color: black;
+          background-color: grey;
+        }
+      }
+    }
+  }
+}
+
+.product {
+  .product_title {
+    h1 {
+      @include textStyle($color-black-0, $fs-3, $fw-2);
+      text-align: center;
+      padding-bottom: 1.6rem;
+    }
+  }
+  .product_content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    .product_item {
+      background-color: $color-gray-0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      img {
+        width: 100%;
+      }
+      .item_text {
+        padding: 0 1.6rem;
+        h3 {
+          @include textStyle($color-black-0, $fs-1, $fw-3);
+        }
+
+        p {
+          @include textStyle($color-gray-3, $fs-0, $fw-2);
+        }
+      }
+
+      .item_buy {
+        background-color: $color-gray-2;
+        @include contentSection(space-between, 0);
+        span {
+          @include textStyle($color-black-0, $fs-1, $fw-3);
+          margin-right: 30px;
+        }
+        a {
+          .btn-buyNow {
+            font-weight: bold;
+            border-radius: 8px;
+            @include styleButton(15px 60px, $color-white-0, $color-black-0);
+            &:hover {
+              transition: all 0.5s;
+              color: black;
+              background-color: grey;
+            }
+          }
+        }
+      }
+    }
+  }
+}
